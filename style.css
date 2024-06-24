@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* assinging variables */
+:root{
+    --primary-color: #a855f7;
+    --primaty-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 100%;
+}
+
+
+/* assigning fonts */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* sizing and coloring navigation bar */
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+/* aligning the content in the navigation bar */
+.nav__content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* editing the logo in the navigation bar */
+nav .logo a{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+/* editing the hover effect for logo in the navigation bar */
+nav .logo a:hover{
+    color: var(--primaty-color-dark);
+}
+
+/* Hiding the hamburger menu bar in the screen */
+nav .checkbox{
+    display: none;
+}
+
+/* Hiding the input area bar in the screen */
+nav input{
+    display: none;
+}
+
+/* Increasing the size of the hamburger menu and coloring it */
+nav .checkbox{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Making the list items in a column with gap and adding transistion */
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+    transition: left .3s;
+}
+
+/* setting border for list items, increasing border and making it transparent, adding transition */
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+/* adding hower effect on border(top & bottom only) and text for the list items */
+ul li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.section{
+    background-color: var(--extra-light);
+}
+
+.section-container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.title span{
+    font-weight: 600;
+}
+
+.description{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.action{
+    display: flex;
+}
+
+.action button{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resume{
+    background-color: var(--extra-light);
+    color: var(--primary-color);
+}
+
+.resume:hover{
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+}
+
+.heading{
+    padding-top: 7rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* .education{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.edu-header{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.education-container{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.box{
+    flex: 1;
+    border: 2px solid var(--primary-color);
+    margin: 2px;
+    padding: 10px;
+    background: linear-gradient(var(--primaty-color-dark),#5e506b);
+    transition: 0.3s;
+}
+
+.box:first-child{
+    margin-left: 0;
+}
+
+.box:last-child{
+    margin-left: 0;
+}
+ */
+
+
+.education-container{
+    padding: 0rem 7rem 7rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.box h2{
+    color: rgb(40, 38, 38);
+    font-weight: 800;
+}
+
+.box p{
+    color: white;
+    font-weight: 600;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(var(--primaty-color-dark),#5e506b);
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.school{
+    font-size: 7rem;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.__education{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    background-color: var(--extra-light);
+}
+
+.project-img{
+    width: 400px; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.project-container{
+    padding: 0rem 7rem 7rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+}
+
+.project-item{
+    transition: 0.5s;
+}
+
+.project-item:hover{
+    transform: scale(1.1);
+}
+
+.contact{
+    height: 100px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+}
+
+.contact h1{
+    color: var(--text-dark);
+    font-size: 1.7rem;
+}
+
+.contact-info{
+    color: white; 
+    font-size: 40px;
+    background-color: transparent;
+    padding: 10px 10px; 
+    border-radius: 50px;
+}
+
+/* when the screen's width gets smaller than 750px */
+@media (width<750px){
+    
+    /* Making the hamburger menu bar in the screen visible */
+    nav .checkbox{
+        display: block;
+    }
+
+    /* Making the list items to a single column and hiding it in the left side of the screen */
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh-85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    /* Assigning the list content to the hamburger menu(label) and making the list showup from left*/
+    nav #check:checked ~ ul{
+        left: 0;
+    }
+
+    /* increasing the sze of the list items */
+    ul li a{
+        font-size: 1.25rem;
+    }
+
+    .section-container{
+        padding: 7rem 1rem 5rem 1rem;
+        text-align: center;
+    }
+
+    .action{
+        margin: auto;
+    }
+
+    
+
+    /* .__education{
+        padding: 7rem 1rem 5rem 1rem;
+    }
+
+    .education-container{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+    } */
+}
+
+@media screen and (max-width: 980px){
+    .education-container .box{
+        flex-basis: 40%;
+        margin: 0px 0px 5px 0px;
+    } 
+    
+    .education-container .box:last-child{
+        flex-basis: 100%;
+        margin: 0;
+    } 
+
+    .education-container .box:nth-last-child(2){
+        flex-basis: 40%;
+        margin-right: 0;
+    } 
+}
+
+@media screen and (max-width: 680px){
+    .education-container .box{
+        flex-basis: 100%;
+        margin: 0px 0px 10px 0px;
+    }    
+}
